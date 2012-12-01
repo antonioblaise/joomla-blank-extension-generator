@@ -9,9 +9,13 @@
 #include "Dialog.h"
 
 MainWindow::MainWindow() {
+    
+    QTabWidget* tabWidget = new QTabWidget();
+    tabWidget->addTab(new Dialog(), tr("Component"));
 
-    setWindowTitle("Joomla! Blank Extension (0.0.1)");
-    setCentralWidget(new Dialog());
+    setWindowTitle("Joomla! Blank Extension (0.0.2)");    
+//    setCentralWidget(new Dialog());
+    setCentralWidget(tabWidget);
 
 }
 

@@ -16,6 +16,7 @@
 #include <QLineEdit>
 #include <QTextEdit>
 #include <QCloseEvent>
+#include <QTabWidget>
 
 class MainWindow : public QMainWindow {
 public:
